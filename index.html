@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="src/imgs/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Bon Appétit | Chase your cravings away</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar-nav fixed-top">
+            <div class="row row-nav">
+                <div class="col logo-col">
+                    <div class="logo">
+                        <a href="index.html"> <img src="src/imgs/logo.png" alt=""> </a>
+                    </div>
+                </div>
+                <div class="col text-center">
+                    <form action="" class="input-group">
+                        <input type="text" class="form-control" id="city-search" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default" placeholder="Search for a recipe"
+                            autocomplete="off" />
+                        <button class="button">
+                            <img src="src/imgs/search.png" width="30px" />
+                        </button>
+                    </form>
+                </div>
+                <div class="col text-end">
+                    <div class="contact">
+                        <a href="mailto:laalasa.krishna@gmail.com" class="" target="_blank">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="wrapper result">
+
+        </div>
+        <div class="wrapper p-5 text-center craving">
+            <h1>Not sure what you are craving for?</h1>
+            <div class="go-here">
+                <a href="random.html">Go Here</a>
+            </div>
+        </div>
+        <div class="random">
+            <div class="row cards p-5 ">
+                <div class="col mt-4 c1">
+                    <div class="card">
+                        <img src="https://spoonacular.com/recipeImages/646825-556x370.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Holiday Cookies</h5>
+                            <hr>
+                            <p class="card-text">
+                                Cusine: American
+                                <br>
+                                Time: 45mins
+                                <br>
+                                Servings: 24
+                                <br>
+                                Source: Foodista
+                            </p>
+                            <a href="https://www.foodista.com/recipe/K88VYRLF/holiday-cookies" class="btn btn-primary"
+                                target="_blank">Checkout Recipie</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mt-4 c2">
+                    <div class="card">
+                        <img src="https://spoonacular.com/recipeImages/639401-556x370.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Cider-Braised Pork Shoulder With Caramelized Onion and Apple Confit
+                            </h5>
+                            <hr>
+                            <p class="card-text">
+                                Cusine: American
+                                <br>
+                                Time: 45mins
+                                <br>
+                                Servings: 4
+                                <br>
+                                Source: Foodista
+                            </p>
+                            <a href="https://www.foodista.com/recipe/76WCQ5NG/cider-braised-pork-shoulder-with-caramelized-onion-and-apple-confit"
+                                class="btn btn-primary" target="_blank">Checkout Recipie</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mt-4 c3">
+                    <div class="card">
+                        <img src="https://spoonacular.com/recipeImages/632452-556x370.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Apple & Cream Cheese Braid</h5>
+                            <hr>
+                            <p class="card-text">
+                                Cusine: Italian
+                                <br>
+                                Time: 45mins
+                                <br>
+                                Servings: 1
+                                <br>
+                                Source: Foodista
+                            </p>
+                            <a href="http://www.foodista.com/recipe/2YX85ZW6/apple-cream-cheese-braid"
+                                class="btn btn-primary" target="_blank">Checkout Recipie</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mt-4 c4">
+                    <div class="card">
+                        <img src="https://spoonacular.com/recipeImages/639779-556x370.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Coconut Macaroons With Chocolate Drizzle</h5>
+                            <hr>
+                            <p class="card-text">
+                                Cusine: American
+                                <br>
+                                Time: 45mins
+                                <br>
+                                Servings: 24
+                                <br>
+                                Source: Foodista
+                            </p>
+                            <a href="https://www.foodista.com/recipe/HRJ7BZX8/coconut-macaroons-with-chocolate-drizzle"
+                                class="btn btn-primary" target="_blank">Checkout Recipie</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mt-4 c5">
+                    <div class="card">
+                        <img src="https://spoonacular.com/recipeImages/643405-556x370.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">French Toast Croissants with Strawberries</h5>
+                            <hr>
+                            <p class="card-text">
+                                Cusine: American
+                                <br>
+                                Time: 20mins
+                                <br>
+                                Servings: 4
+                                <br>
+                                Source: ${source}
+                            </p>
+                            <a href="http://www.foodista.com/recipe/F3MF6QN4/french-toast-croissants"
+                                class="btn btn-primary" target="_blank">Checkout Recipie</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mt-4 c6">
+                    <div class="card">
+                        <img src="https://spoonacular.com/recipeImages/637187-556x370.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Carrot Cake Snack Bites</h5>
+                            <hr>
+                            <p class="card-text">
+                                Cusine: Mediterranean
+                                <br>
+                                Time: 45mins
+                                <br>
+                                Servings: 20
+                                <br>
+                                Source: Foodista
+                            </p>
+                            <a href="http://www.foodista.com/recipe/Z4DBX47V/carrot-cake-snack-bites"
+                                class="btn btn-primary" target="_blank">Checkout Recipie</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mt-4 c7">
+                    <div class="card">
+                        <img src="https://spoonacular.com/recipeImages/660382-556x370.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Smoked Salmon Pasta</h5>
+                            <hr>
+                            <p class="card-text">
+                                Cusine: Italian
+                                <br>
+                                Time: 45mins
+                                <br>
+                                Servings: 4
+                                <br>
+                                Source: Foodista
+                            </p>
+                            <a href="http://www.foodista.com/recipe/YFCWP7PB/smoked-salmon-pasta"
+                                class="btn btn-primary" target="_blank">Checkout Recipie</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mt-4 c8">
+                    <div class="card">
+                        <img src="https://spoonacular.com/recipeImages/643150-556x370.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Fluffy frittata with spinach</h5>
+                            <hr>
+                            <p class="card-text">
+                                Cusine: American
+                                <br>
+                                Time: 45mins
+                                <br>
+                                Servings: 4
+                                <br>
+                                Source: Foodista
+                            </p>
+                            <a href="http://www.foodista.com/recipe/Z3SVPNCV/fluffy-frittata-with-spinach"
+                                class="btn btn-primary" target="_blank">Checkout Recipie</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mt-4 c9">
+                    <div class="card">
+                        <img src="https://spoonacular.com/recipeImages/631785-556x370.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Impossible" Coconut Pie</h5>
+                            <hr>
+                            <p class="card-text">
+                                Cusine: American
+                                <br>
+                                Time: 45mins
+                                <br>
+                                Servings: 10
+                                <br>
+                                Source: Foodista
+                            </p>
+                            <a href="https://www.foodista.com/recipe/CBTKCKX4/impossible-coconut-pie"
+                                class="btn btn-primary" target="_blank">Checkout Recipie</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mt-4 c10">
+                    <div class="card">
+                        <img src="https://spoonacular.com/recipeImages/632737-556x370.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Arroz Con Leche</h5>
+                            <hr>
+                            <p class="card-text">
+                                Cusine: Spanish
+                                <br>
+                                Time: 45mins
+                                <br>
+                                Servings: 6
+                                <br>
+                                Source: Foodista
+                            </p>
+                            <a href="https://www.foodista.com/recipe/TJMRG2RX/arroz-con-leche" class="btn btn-primary"
+                                target="_blank">Checkout Recipie</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mt-4 c11">
+                    <div class="card">
+                        <img src="https://spoonacular.com/recipeImages/649195-556x370.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lamb Burgers With Tzatziki Sauce</h5>
+                            <hr>
+                            <p class="card-text">
+                                Cusine: Mediterranean
+                                <br>
+                                Time: 45mins
+                                <br>
+                                Servings: 4
+                                <br>
+                                Source: Foodista
+                            </p>
+                            <a href="http://www.foodista.com/recipe/QLMYDMY6/lamb-burgers-with-tzatziki-sauce"
+                                class="btn btn-primary" target="_blank">Checkout Recipie</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mt-4 c12">
+                    <div class="card">
+                        <img src="https://spoonacular.com/recipeImages/641435-556x370.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Dessert Apple Rings With Cinnamon Cream Syrup</h5>
+                            <hr>
+                            <p class="card-text">
+                                Cusine: Mexican
+                                <br>
+                                Time: 45mins
+                                <br>
+                                Servings: 6
+                                <br>
+                                Source: Foodista
+                            </p>
+                            <a href="http://www.foodista.com/recipe/DXMVKPRX/dessert-apple-rings-with-cinnamon-cream-syrup"
+                                class="btn btn-primary" target="_blank">Checkout Recipie</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="text-center mb-2">
+            All copyrights reserved
+        </div>
+    </footer>
+    <script src="src/app.js"></script>
+</body>
+
+</html>
