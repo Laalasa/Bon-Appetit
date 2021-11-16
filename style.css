@@ -132,6 +132,9 @@ body {
   .text-end {
     display: none;
   }
+  .p-5{
+    padding:1rem!important;
+  }
 }
 
 h1 {
